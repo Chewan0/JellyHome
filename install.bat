@@ -96,8 +96,8 @@ echo.
 echo [*] Image'lar guncelleniyor...
 %COMPOSE_CMD% %COMPOSE_ARGS% pull
 if errorlevel 1 goto fail
-e
 %COMPOSE_CMD% %COMPOSE_ARGS% up -d
+
 if errorlevel 1 goto fail
 echo [V] Guncelleme tamamlandi.
 pause
